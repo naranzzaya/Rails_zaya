@@ -1,8 +1,10 @@
-<% counter = 1 %>
+<% colors = [ 
+    ['красный', 'red'], 
+    ['синий', 'blue'], 
+    ['голубой', 'cyan'] ] %>
 
-<% 3.times do %>
-<%= render 'counter', counter: counter %>
-<% counter += 1 %>
+<% colors.each do |color| %>
+<%= render 'counter', color: color %>
 <% end %>
 
-<h1>Ваше программирование!</h1>
+<h1>Выбирай себе любой</h1>
